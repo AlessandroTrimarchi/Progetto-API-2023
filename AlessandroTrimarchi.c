@@ -22,7 +22,7 @@ void reverseArray(int arr[], int size);
 int main()
 {
     char nome_funzione[50];
-    int f, i, j, k;
+    unsigned f, i, j, k;
     int dist;
     int num_stazioni;
     int part, arr;
@@ -220,7 +220,7 @@ int main()
 //funzione aggiungi-stazione//
 void aggiungi_stazione(int distanza,int** autonomie)
 {
-    int i; 
+    unsigned i; 
     int num_auto, max_autonomia, indice_max_autonomia;
 
     max_autonomia = 0;
@@ -268,7 +268,7 @@ void aggiungi_auto(int distanza, int** autonomie)
 void rottama_auto(int distanza, int** autonomie)
 {
     int autonomia_cancellata, max_autonomia, indice_max_autonomia;
-    int i, f;
+    unsigned i, f;
 
     if(scanf("%d", &autonomia_cancellata)){};
 
@@ -677,5 +677,4 @@ void pianifica_percorso_alto_basso(int pian_distanze[], int pian_autonomie[], in
     }
     free(albero_di_nodi);
     albero_di_nodi=NULL;
-
 }
